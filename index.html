@@ -135,17 +135,20 @@
 <body>
     <!-- Navigation -->
     <nav class="bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-2 sm:px-4">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center py-4 h-auto sm:h-24">
                 <div class="flex items-center">
-                    <div class="flex items-center gap-1 sm:gap-4">
-                        <img src="CenturiesMutualLogoinc.png" alt="Centuries Mutual Logo" class="h-20 sm:h-32 w-auto object-contain"/>
-                        <span class="text-2xl sm:text-5xl md:text-6xl font-bold text-green-900 playfair">Centuries Mutual</span>
+                    <div class="flex items-center gap-3 sm:gap-4">
+                        <img src="CenturiesMutualLogoinc.png" alt="Centuries Mutual Logo" class="h-20 sm:h-28 w-auto object-contain"/>
+                        <div class="flex flex-col sm:flex-row sm:items-center">
+                            <span class="text-4xl sm:text-5xl md:text-6xl font-bold text-green-900 playfair">Centuries</span>
+                            <span class="text-4xl sm:text-5xl md:text-6xl font-bold text-green-900 playfair sm:ml-3">Mutual</span>
+                        </div>
                     </div>
                 </div>
-                <div class="flex ml-2 sm:ml-0">
+                <div class="flex ml-4 sm:ml-0">
                     <a href="client-login.html" 
-                       class="professional-button whitespace-nowrap inline-flex items-center px-3 sm:px-6 py-2 sm:py-3 border-2 border-green-900 text-xs sm:text-base font-medium rounded text-white bg-green-900 hover:bg-green-800 transition-colors duration-300">
+                       class="professional-button whitespace-nowrap inline-flex items-center px-4 sm:px-6 py-3 border-2 border-green-900 text-sm sm:text-base font-medium rounded text-white bg-green-900 hover:bg-green-800 transition-colors duration-300">
                         Client Login
                     </a>
                 </div>
@@ -342,40 +345,60 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
-                <!-- Company Info -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-900">Centuries Mutual</h3>
-                    <p class="text-gray-600">Professional insurance and tax services you can trust.</p>
+    <footer class="bg-green-900">
+        <div class="max-w-7xl mx-auto px-8 sm:px-12 py-16 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center md:justify-items-start">
+                <!-- Logo and Slogan Section -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="space-y-4">
+                        <div class="flex flex-col md:flex-row items-center gap-4">
+                            <img src="CenturiesMutualLogoinc.png" alt="Centuries Mutual Logo" class="h-20 w-auto object-contain"/>
+                            <span class="text-3xl sm:text-4xl font-bold text-white playfair tracking-wide">Centuries Mutual</span>
+                        </div>
+                        <p class="text-base text-gray-300 leading-relaxed max-w-md mt-6 text-center md:text-left">
+                            Established in 2025, providing innovative insurance and financial solutions with integrity.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Services -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-900">Services</h3>
-                    <ul class="space-y-2 flex flex-col items-center md:items-start">
-                        <li><a href="health-insurance.html" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Health Insurance</a></li>
-                        <li><a href="life-insurance.html" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Life Insurance</a></li>
-                        <li><a href="tax-preparation.html" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Tax Preparation</a></li>
+                <!-- Our Company Section -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Our Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="documents.html" class="text-base text-gray-300 hover:text-white">Documents</a></li>
+                        <li><a href="faq.html" class="text-base text-gray-300 hover:text-white">FAQ</a></li>
+                        <li><a href="newsletter.html" class="text-base text-gray-300 hover:text-white">Newsletter</a></li>
+                        <li><a href="careers.html" class="text-base text-gray-300 hover:text-white">Careers</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-900">Contact</h3>
-                    <ul class="space-y-2 flex flex-col items-center md:items-start">
-                        <li class="text-gray-600">(555) 123-4567</li>
-                        <li class="text-gray-600">info@centuriesmutual.com</li>
+                <!-- Contact Section -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-base text-gray-300">
+                            6000 Ross Perot<br>
+                            Dallas, TX 75235
+                        </li>
+                        <li>
+                            <a href="tel:+18883246642" class="text-base text-gray-300 hover:text-white">
+                                +1 (888) 324-6642
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@centuriesmutual.com" class="text-base text-gray-300 hover:text-white">
+                                support@centuriesmutual.com
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
-                <!-- Legal -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-900">Legal</h3>
-                    <ul class="space-y-2 flex flex-col items-center md:items-start">
-                        <li><a href="privacy-policy.html" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Terms of Service</a></li>
+                <!-- Legal Section -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy-policy.html" class="text-base text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-base text-gray-300 hover:text-white">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
