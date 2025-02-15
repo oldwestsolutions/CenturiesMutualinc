@@ -5,68 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter - Centuries Mutual</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
-<body>
-    <!-- Navigation (same as index.html) -->
+<body class="bg-gray-50">
+    <!-- Navigation -->
     <nav class="bg-white shadow-sm border-b border-gray-100">
-        <!-- ... navigation content ... -->
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="https://placehold.co/80x80" alt="Centuries Mutual Logo" class="h-16 w-16 mr-5"/>
+                    <span class="text-3xl sm:text-4xl font-semibold text-green-900 playfair">Centuries Mutual</span>
+                </div>
+                <a href="index.html" class="text-green-900 hover:text-green-800">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Add this after the navigation -->
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 pt-8">
-        <a href="index.html" class="inline-flex items-center text-green-900 hover:text-green-800 transition-colors duration-300">
-            <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-            </svg>
-            Back to Home
-        </a>
-    </div>
-
-    <div class="min-h-screen bg-gray-50 py-6">
-        <div class="max-w-2xl mx-auto px-4 sm:px-6">
+    <!-- Newsletter Content -->
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-xl shadow-sm p-8 md:p-12">
             <div class="text-center mb-12">
-                <h1 class="text-3xl font-bold text-gray-900 playfair">Stay Informed</h1>
-                <p class="mt-4 text-gray-600">Subscribe to our newsletter for updates, industry news, and expert insights</p>
+                <h1 class="text-4xl font-bold text-gray-900 playfair mb-4">Stay Informed with Our Monthly Newsletter</h1>
+                <p class="text-xl text-gray-600">
+                    Get expert insights, market updates, and financial tips delivered to your inbox once per month.
+                </p>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md p-8">
-                <form action="#" method="POST" class="space-y-6">
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                        <input type="email" id="email" name="email" required 
-                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex items-center h-5">
-                            <input type="checkbox" id="privacy" name="privacy" required
-                                   class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
-                        </div>
-                        <div class="ml-3 text-sm">
-                            <label for="privacy" class="font-medium text-gray-700">
-                                I agree to receive newsletters and accept the 
-                                <a href="privacy.html" class="text-green-800 hover:text-green-700">Privacy Policy</a>
-                            </label>
-                        </div>
-                    </div>
-
-                    <button type="submit" 
-                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-900 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                        Subscribe to Newsletter
-                    </button>
-                </form>
+            <div class="bg-green-50 rounded-lg p-4 mb-8 flex items-start">
+                <i class="fas fa-info-circle text-green-800 mt-1 mr-3"></i>
+                <p class="text-green-800">
+                    Our newsletter is sent on the first Tuesday of each month. We respect your privacy and will never share your information.
+                </p>
             </div>
 
-            <div class="mt-8 text-center text-sm text-gray-600">
-                <p>You can unsubscribe at any time. We respect your privacy.</p>
+            <div class="space-y-6 mb-8">
+                <h2 class="text-2xl font-semibold text-gray-900 playfair">What You'll Receive:</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <span class="text-gray-600">Monthly market analysis and investment insights</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <span class="text-gray-600">Tax planning strategies and updates</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <span class="text-gray-600">Insurance industry news and tips</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <span class="text-gray-600">Exclusive webinar invitations and educational content</span>
+                    </li>
+                </ul>
             </div>
+
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required 
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500">
+                </div>
+                <div class="flex items-start">
+                    <input type="checkbox" id="consent" name="consent" required class="mt-1 h-4 w-4 text-green-800 focus:ring-green-500 border-gray-300 rounded">
+                    <label for="consent" class="ml-2 block text-sm text-gray-600">
+                        I agree to receive monthly newsletters and understand I can unsubscribe at any time.
+                    </label>
+                </div>
+                <button type="submit" 
+                        class="w-full bg-green-900 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition-colors duration-300 flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Subscribe to Monthly Newsletter
+                </button>
+            </form>
         </div>
     </div>
 
-    <!-- Footer (same as index.html) -->
-    <footer class="bg-white border-t border-gray-100">
-        <!-- ... footer content ... -->
+    <!-- Footer -->
+    <footer class="bg-green-900 h-20">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <p class="text-sm text-gray-300">&copy; 2024 Centuries Mutual. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="privacy-policy.html" class="text-sm text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="terms-of-service.html" class="text-sm text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html> 
