@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Centuries Mutual?</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-card {
+            position: relative;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, #064e3b, rgba(6, 78, 59, 0.2));
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 h-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://placehold.co/80x80" alt="Centuries Mutual Logo" class="h-12 w-12 mr-3"/>
+                    <span class="text-2xl font-semibold text-green-900 playfair">Centuries Mutual</span>
+                </a>
+                <a href="index.html" class="text-green-900 hover:text-green-800 flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-green-900 to-green-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-5xl font-bold playfair mb-6">Why Choose Centuries Mutual?</h1>
+                <p class="text-xl text-green-100">A century of trust, expertise, and dedication to securing your financial future.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Key Statistics -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+            <div class="stat-card bg-white p-6 rounded-xl shadow-sm pl-8">
+                <p class="text-3xl font-bold text-green-900">100+</p>
+                <p class="text-gray-600">Years of Service</p>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-xl shadow-sm pl-8">
+                <p class="text-3xl font-bold text-green-900">50K+</p>
+                <p class="text-gray-600">Satisfied Clients</p>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-xl shadow-sm pl-8">
+                <p class="text-3xl font-bold text-green-900">98%</p>
+                <p class="text-gray-600">Client Retention</p>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-xl shadow-sm pl-8">
+                <p class="text-3xl font-bold text-green-900">24/7</p>
+                <p class="text-gray-600">Support Available</p>
+            </div>
+        </div>
+
+        <!-- Core Benefits -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 playfair mb-8 text-center">Our Core Benefits</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-green-800 mb-6">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Trusted Experience</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        With over a century of experience, we've helped generations of families secure their financial future through expert guidance and personalized solutions.
+                    </p>
+                </div>
+
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-green-800 mb-6">
+                        <i class="fas fa-handshake text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Personalized Service</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We take time to understand your unique needs and goals, crafting tailored solutions that align with your financial objectives and risk tolerance.
+                    </p>
+                </div>
+
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-green-800 mb-6">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Comprehensive Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        From insurance to tax services, we provide integrated financial solutions under one roof, simplifying your financial management.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Features -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <h3 class="text-2xl font-bold text-gray-900 playfair mb-6">Professional Expertise</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Certified Professionals</h4>
+                            <p class="text-gray-600">Our team consists of certified financial advisors, tax specialists, and insurance experts.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Continuous Training</h4>
+                            <p class="text-gray-600">Regular professional development ensures our team stays current with industry trends.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Industry Recognition</h4>
+                            <p class="text-gray-600">Award-winning services recognized by leading financial institutions.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <h3 class="text-2xl font-bold text-gray-900 playfair mb-6">Client-First Approach</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">24/7 Support</h4>
+                            <p class="text-gray-600">Round-the-clock assistance for your urgent financial needs.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Digital Solutions</h4>
+                            <p class="text-gray-600">State-of-the-art online platform for convenient account management.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-800 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-1">Regular Reviews</h4>
+                            <p class="text-gray-600">Scheduled portfolio reviews to ensure your strategy stays aligned with your goals.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-green-900 rounded-xl text-white p-12 text-center">
+            <h2 class="text-3xl font-bold playfair mb-6">Ready to Secure Your Financial Future?</h2>
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+                Join thousands of satisfied clients who trust Centuries Mutual with their financial well-being.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="YOUR_CUSTOM_LINK_HERE" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center px-8 py-3 border-2 border-white text-base font-medium rounded-lg text-white hover:bg-white hover:text-green-900 transition-colors duration-300">
+                    <i class="fas fa-user-tie mr-2"></i>
+                    Connect with an Advisor
+                </a>
+                <a href="learn-more.html" class="inline-flex items-center px-8 py-3 bg-white text-base font-medium rounded-lg text-green-900 hover:bg-green-50 transition-colors duration-300">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#03214A] h-20">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <p class="text-sm text-gray-300">&copy; 2024 Centuries Mutual. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="privacy-policy.html" class="text-sm text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="terms-of-service.html" class="text-sm text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

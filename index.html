@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellington Capital Partners - Professional Wealth Management</title>
+    <title>Centuries Mutual - Professional Insurance & Tax Services</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
@@ -37,13 +38,12 @@
         }
 
         .feature-card {
-            transition: all 0.3s ease;
-            border: 1px solid rgba(6, 78, 59, 0.1);
+            transition: all 0.5s ease-in-out;
         }
 
         .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
 
         .professional-button {
@@ -79,9 +79,25 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 2px;
-            height: 40px;
-            background-color: #064e3b;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, #064e3b, rgba(6, 78, 59, 0.2));
+            border-radius: 2px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -91,14 +107,13 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <span class="text-2xl font-semibold text-green-900 playfair">Wellington Capital Partners</span>
+                    <img src="https://placehold.co/80x80" alt="Centuries Mutual Logo" class="h-16 w-16 mr-5"/>
+                    <span class="text-3xl sm:text-4xl font-semibold text-green-900 playfair">Centuries Mutual</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-green-800 text-sm font-medium">Solutions</a>
-                    <a href="#" class="text-gray-700 hover:text-green-800 text-sm font-medium">Expertise</a>
-                    <a href="#" class="text-gray-700 hover:text-green-800 text-sm font-medium">Insights</a>
-                    <a href="#" class="text-gray-700 hover:text-green-800 text-sm font-medium">About</a>
-                    <a href="#" class="text-gray-700 hover:text-green-800 text-sm font-medium">Contact</a>
+                <div class="flex">
+                    <a href="client-login.html" class="professional-button inline-flex items-center px-4 sm:px-6 py-2 border-2 border-green-900 text-sm sm:text-base font-medium rounded text-white bg-green-900 hover:bg-green-800 transition-colors duration-300">
+                        Client Login
+                    </a>
                 </div>
             </div>
         </div>
@@ -111,27 +126,28 @@
                 <!-- Left Column -->
                 <div class="px-8 py-20 lg:px-12 lg:py-32">
                     <div class="max-w-lg">
-                        <h1 class="text-4xl lg:text-5xl font-bold text-white playfair leading-tight">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-white playfair leading-tight fade-in">
                             Strategic Wealth Management for Institutional Success
                         </h1>
                         <p class="mt-6 text-lg text-gray-200 leading-relaxed">
                             Providing institutional-grade investment solutions and comprehensive wealth management services to help you achieve your long-term financial objectives.
                         </p>
                         <div class="mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex">
-                            <a href="#" class="professional-button inline-flex items-center px-6 py-3 border-2 border-white text-base font-medium rounded text-white hover:bg-white hover:text-green-900 transition-colors duration-300">
-                                Schedule a Consultation
+                            <a href="coming-soon.html" 
+                               class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-900 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 shadow-md transition-colors duration-300">
+                                Schedule Doctor
                             </a>
-                            <a href="#" class="professional-button inline-flex items-center px-6 py-3 border-2 border-transparent text-base font-medium rounded text-green-900 bg-white hover:bg-gray-50 transition-colors duration-300">
+                            <a href="learn-more.html" class="professional-button inline-flex items-center px-6 py-3 border-2 border-transparent text-base font-medium rounded text-green-900 bg-white hover:bg-gray-50 transition-colors duration-300">
                                 Learn More
                             </a>
                         </div>
                         <!-- Statistics -->
                         <div class="mt-12 grid grid-cols-2 gap-8">
-                            <div class="stat-card pl-4">
+                            <div class="stat-card pl-4 fade-in">
                                 <p class="text-3xl font-bold text-white">$14.2B</p>
                                 <p class="mt-1 text-sm text-gray-300">Assets Under Management</p>
                             </div>
-                            <div class="stat-card pl-4">
+                            <div class="stat-card pl-4 fade-in">
                                 <p class="text-3xl font-bold text-white">25+</p>
                                 <p class="mt-1 text-sm text-gray-300">Years of Excellence</p>
                             </div>
@@ -140,7 +156,7 @@
                 </div>
                 <!-- Right Column -->
                 <div class="hero-image h-full min-h-[400px] lg:min-h-full relative">
-                    <img src="/api/placeholder/1000/800" alt="Professional wealth management" class="w-full h-full object-cover"/>
+                    <img src="https://placehold.co/1000x800" alt="Professional wealth management" class="w-full h-full object-cover"/>
                     <!-- Professional Overlay Cards -->
                     <div class="absolute bottom-8 right-8 z-10 flex space-x-4">
                         <div class="bg-white p-4 rounded shadow-lg">
@@ -158,63 +174,100 @@
     </div>
 
     <!-- Services Section -->
-    <div class="py-20 bg-white">
+    <div class="py-20 bg-gradient-to-b from-white to-gray-50" id="services">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h2 class="text-3xl font-bold text-gray-900 playfair sm:text-4xl">
-                    Comprehensive Investment Solutions
+                    Our Professional Services
                 </h2>
-                <p class="mt-4 text-xl text-gray-600">
-                    Tailored strategies to protect and grow your wealth
+                <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive solutions for your financial security and peace of mind
                 </p>
             </div>
 
             <div class="mt-16">
-                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Investment Management -->
-                    <div class="feature-card bg-white overflow-hidden rounded-lg p-6">
-                        <div>
-                            <div class="h-12 w-12 bg-green-50 rounded-lg flex items-center justify-center">
-                                <svg class="h-6 w-6 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+                <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+                    <!-- Tax Preparation -->
+                    <a href="tax-preparation.html" class="feature-card bg-white overflow-hidden rounded-xl p-8 text-center fade-in hover:shadow-2xl border border-gray-100 block">
+                        <div class="flex flex-col items-center">
+                            <div class="h-16 w-16 flex items-center justify-center mb-6">
+                                <i class="fas fa-calculator text-4xl text-green-800"></i>
                             </div>
-                            <h3 class="mt-4 text-lg font-semibold text-gray-900">Investment Management</h3>
-                            <p class="mt-2 text-gray-600">
-                                Institutional-grade portfolio management with a focus on risk-adjusted returns and capital preservation.
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Tax Preparation</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Expert tax preparation services ensuring maximum returns and full compliance with current tax regulations. We handle personal and business taxes with precision.
                             </p>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- Wealth Planning -->
-                    <div class="feature-card bg-white overflow-hidden rounded-lg p-6">
-                        <div>
-                            <div class="h-12 w-12 bg-green-50 rounded-lg flex items-center justify-center">
-                                <svg class="h-6 w-6 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+                    <!-- Health Insurance -->
+                    <a href="health-insurance.html" class="feature-card bg-white overflow-hidden rounded-xl p-8 text-center hover:shadow-2xl border border-gray-100 block">
+                        <div class="flex flex-col items-center">
+                            <div class="h-16 w-16 flex items-center justify-center mb-6">
+                                <i class="fas fa-heartbeat text-4xl text-green-800"></i>
                             </div>
-                            <h3 class="mt-4 text-lg font-semibold text-gray-900">Wealth Planning</h3>
-                            <p class="mt-2 text-gray-600">
-                                Comprehensive financial planning integrating tax efficiency, estate planning, and wealth transfer strategies.
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Health Insurance</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Comprehensive health insurance solutions tailored to your needs. We help you find the right coverage for you and your family.
                             </p>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- Private Markets -->
-                    <div class="feature-card bg-white overflow-hidden rounded-lg p-6">
-                        <div>
-                            <div class="h-12 w-12 bg-green-50 rounded-lg flex items-center justify-center">
-                                <svg class="h-6 w-6 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                </svg>
+                    <!-- Life Insurance -->
+                    <a href="life-insurance.html" class="feature-card bg-white overflow-hidden rounded-xl p-8 text-center hover:shadow-2xl border border-gray-100 block">
+                        <div class="flex flex-col items-center">
+                            <div class="h-16 w-16 flex items-center justify-center mb-6">
+                                <i class="fas fa-umbrella text-4xl text-green-800"></i>
                             </div>
-                            <h3 class="mt-4 text-lg font-semibold text-gray-900">Private Markets</h3>
-                            <p class="mt-2 text-gray-600">
-                                Access to exclusive private equity, real estate, and alternative investment opportunities.
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Life Insurance</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Protect your family's future with our comprehensive life insurance plans. Get peace of mind knowing they're secure.
                             </p>
                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-bold text-gray-900 playfair">A Legacy of Trust Since 1924</h2>
+                    <p class="text-lg text-gray-600">
+                        For a century, Centuries Mutual has been a pillar of financial security and professional service. Our commitment to excellence and personalized attention has helped generations of families and businesses protect what matters most.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div class="stat-card pl-6">
+                            <p class="text-3xl font-bold text-gray-900">100+</p>
+                            <p class="text-gray-600">Years of Service</p>
+                        </div>
+                        <div class="stat-card pl-6">
+                            <p class="text-3xl font-bold text-gray-900">50K+</p>
+                            <p class="text-gray-600">Satisfied Clients</p>
+                        </div>
+                        <div class="stat-card pl-6">
+                            <p class="text-3xl font-bold text-gray-900">98%</p>
+                            <p class="text-gray-600">Client Retention</p>
+                        </div>
+                        <div class="stat-card pl-6">
+                            <p class="text-3xl font-bold text-gray-900">24/7</p>
+                            <p class="text-gray-600">Support Available</p>
+                        </div>
                     </div>
+                    <div class="mt-4">
+                        <a href="about.html" class="inline-flex items-center text-green-900 hover:text-green-800 transition-colors duration-300">
+                            Learn More About Our Story
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-xl">
+                    <img src="images/about-us.jpg" alt="About Centuries Mutual" class="w-full h-[600px] object-cover">
                 </div>
             </div>
         </div>
@@ -235,7 +288,10 @@
                     </div>
                     <div class="mt-8 lg:mt-0 lg:flex-shrink-0">
                         <div class="inline-flex rounded-md shadow">
-                            <a href="#" class="professional-button inline-flex items-center px-6 py-3 border-2 border-white text-base font-medium rounded text-white hover:bg-white hover:text-green-900 transition-colors duration-300">
+                            <a href="YOUR_CUSTOM_LINK_HERE"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="professional-button inline-flex items-center px-6 py-3 border-2 border-white text-base font-medium rounded text-white hover:bg-white hover:text-green-900 transition-colors duration-300">
                                 Connect with an Advisor
                             </a>
                         </div>
@@ -248,25 +304,124 @@
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-100">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Solutions</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">Investment Management</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">Wealth Planning</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">Private Markets</a></li>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Slogan Section -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex flex-col items-start">
+                        <img src="https://placehold.co/60x60" alt="Centuries Mutual Logo" class="h-16 w-16 mb-4"/>
+                        <span class="text-2xl font-semibold text-green-900 playfair mb-3">Centuries Mutual</span>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Providing security and peace of mind for generations to come.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Company Section -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Our Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="documents.html" class="text-base text-gray-600 hover:text-green-800">Documents</a></li>
+                        <li><a href="faq.html" class="text-base text-gray-600 hover:text-green-800">FAQ</a></li>
+                        <li><a href="newsletter.html" class="text-base text-gray-600 hover:text-green-800">Newsletter</a></li>
+                        <li><a href="careers.html" class="text-base text-gray-600 hover:text-green-800">Careers</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Company</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">About</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">Leadership</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">Careers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Resources</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#" class="text-base text-gray-600 hover:text-green-800">Insights</a></li>
+
+                <!-- Contact Section -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-base text-gray-600">
+                            6000 Ross Perot<br>
+                            Dallas, TX 75235
+                        </li>
                         <li>
+                            <a href="tel:+18883246642" class="text-base text-gray-600 hover:text-green-800">
+                                +1 (888) 324-6642
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@centuriesmutual.com" class="text-base text-gray-600 hover:text-green-800">
+                                support@centuriesmutual.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal Section -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy-policy.html" class="text-base text-gray-600 hover:text-green-800">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-base text-gray-600 hover:text-green-800">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+                <p class="text-sm text-gray-600">&copy; 2024 Centuries Mutual. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add before closing body tag -->
+    <div id="loading" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-green-900"></div>
+    </div>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg transform translate-y-full transition-transform duration-300 z-40">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 flex items-center justify-between">
+            <p class="text-sm text-gray-600">
+                We use cookies to enhance your browsing experience and analyze our traffic.
+                <a href="privacy-policy.html" class="text-green-800 hover:text-green-900 underline">Privacy Policy</a>
+            </p>
+            <button id="accept-cookies" class="ml-4 px-4 py-2 bg-green-900 text-white rounded hover:bg-green-800 transition-colors text-sm">
+                Accept
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loading');
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500);
+        });
+
+        // Fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Cookie banner
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptCookies = document.getElementById('accept-cookies');
+
+        if (!localStorage.getItem('cookiesAccepted')) {
+            setTimeout(() => {
+                cookieBanner.style.transform = 'translateY(0)';
+            }, 1000);
+        }
+
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.style.transform = 'translateY(full)';
+        });
+    </script>
+</body>
+</html>

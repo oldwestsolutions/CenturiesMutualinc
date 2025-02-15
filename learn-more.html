@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - Centuries Mutual</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 h-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://placehold.co/80x80" alt="Centuries Mutual Logo" class="h-12 w-12 mr-3"/>
+                    <span class="text-2xl font-semibold text-green-900 playfair">Centuries Mutual</span>
+                </a>
+                <a href="index.html" class="text-green-900 hover:text-green-800 flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-green-900 to-green-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-5xl font-bold playfair mb-6">Discover Our Services</h1>
+                <p class="text-xl text-green-100">Comprehensive financial solutions tailored to your unique needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm">
+                <div class="text-green-800 mb-6">
+                    <i class="fas fa-heart-pulse text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Health Insurance</h3>
+                <p class="text-gray-600 mb-6">Comprehensive health coverage for individuals and families. Protection when you need it most.</p>
+                <a href="health-insurance.html" class="text-green-800 hover:text-green-700 font-medium inline-flex items-center">
+                    Learn More
+                    <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm">
+                <div class="text-green-800 mb-6">
+                    <i class="fas fa-shield-heart text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Life Insurance</h3>
+                <p class="text-gray-600 mb-6">Secure your family's future with our comprehensive life insurance solutions.</p>
+                <a href="life-insurance.html" class="text-green-800 hover:text-green-700 font-medium inline-flex items-center">
+                    Learn More
+                    <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm">
+                <div class="text-green-800 mb-6">
+                    <i class="fas fa-calculator text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Tax Services</h3>
+                <p class="text-gray-600 mb-6">Expert tax preparation and planning services to maximize your returns.</p>
+                <a href="tax-preparation.html" class="text-green-800 hover:text-green-700 font-medium inline-flex items-center">
+                    Learn More
+                    <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Process Section -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 playfair mb-12 text-center">Our Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-2xl text-green-800"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Initial Consultation</h3>
+                    <p class="text-gray-600">We discuss your needs and goals to understand your situation.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-contract text-2xl text-green-800"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Custom Plan</h3>
+                    <p class="text-gray-600">We create a tailored solution that fits your specific requirements.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-2xl text-green-800"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Implementation</h3>
+                    <p class="text-gray-600">We put your plan into action with our efficient process.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-sync text-2xl text-green-800"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Ongoing Support</h3>
+                    <p class="text-gray-600">We provide continuous support and regular reviews.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 playfair mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">How do I get started?</h3>
+                    <p class="text-gray-600">Schedule a consultation with one of our advisors. We'll discuss your needs and recommend the best solutions for you.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">What services do you offer?</h3>
+                    <p class="text-gray-600">We offer comprehensive insurance solutions, tax services, and financial planning tailored to your needs.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">How long does the process take?</h3>
+                    <p class="text-gray-600">The timeline varies by service, but we strive to provide efficient solutions while ensuring thorough coverage.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">What makes you different?</h3>
+                    <p class="text-gray-600">Our century of experience, personalized service, and comprehensive solutions set us apart in the industry.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-green-900 rounded-xl text-white p-12 text-center">
+            <h2 class="text-3xl font-bold playfair mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+                Take the first step towards securing your financial future with Centuries Mutual.
+            </p>
+            <a href="YOUR_CUSTOM_LINK_HERE" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-flex items-center px-8 py-3 border-2 border-white text-base font-medium rounded-lg text-white hover:bg-white hover:text-green-900 transition-colors duration-300">
+                <i class="fas fa-calendar-alt mr-2"></i>
+                Schedule a Consultation
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#03214A] h-20">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <p class="text-sm text-gray-300">&copy; 2024 Centuries Mutual. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="privacy-policy.html" class="text-sm text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="terms-of-service.html" class="text-sm text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

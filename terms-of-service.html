@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Centuries Mutual</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .terms-content {
+            height: calc(100vh - 64px - 80px); /* Subtract header and footer heights */
+            overflow-y: auto;
+        }
+
+        .terms-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .terms-section:nth-child(2) { animation-delay: 0.2s; }
+        .terms-section:nth-child(3) { animation-delay: 0.4s; }
+        .terms-section:nth-child(4) { animation-delay: 0.6s; }
+
+        .section-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(6, 78, 59, 0.1);
+        }
+
+        .section-card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .bullet-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #064e3b;
+            opacity: 0.6;
+        }
+
+        /* Scrollbar styling */
+        .terms-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .terms-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .terms-content::-webkit-scrollbar-thumb {
+            background: #064e3b;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+
+        .terms-content::-webkit-scrollbar-thumb:hover {
+            background: #053a2c;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 h-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://placehold.co/80x80" alt="Centuries Mutual Logo" class="h-12 w-12 mr-3"/>
+                    <span class="text-2xl font-semibold text-green-900 playfair">Centuries Mutual</span>
+                </a>
+                <a href="index.html" class="text-green-900 hover:text-green-800 flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="terms-content">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <div class="bg-white rounded-xl shadow-sm p-8">
+                <!-- Header with improved styling -->
+                <div class="terms-section mb-12 text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 playfair mb-4">Terms of Service</h1>
+                    <p class="text-gray-600 flex items-center justify-center gap-2">
+                        <i class="fas fa-clock text-green-800"></i>
+                        Last updated: March 15, 2024
+                    </p>
+                    <div class="mt-6 max-w-2xl mx-auto">
+                        <p class="text-gray-600">Please read these terms carefully before using our services. By accessing or using our services, you agree to be bound by these terms.</p>
+                    </div>
+                </div>
+
+                <!-- Key Terms with improved cards -->
+                <div class="terms-section mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-gavel text-green-800 mr-3"></i>
+                        Key Terms
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="section-card bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl">
+                            <div class="flex items-start">
+                                <div class="bg-green-50 rounded-lg p-3">
+                                    <i class="fas fa-handshake text-green-800 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-medium text-gray-900 mb-2">Service Agreement</h3>
+                                    <p class="text-gray-600 leading-relaxed">By using our services, you agree to these terms and conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-card bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl">
+                            <div class="flex items-start">
+                                <div class="bg-green-50 rounded-lg p-3">
+                                    <i class="fas fa-lock text-green-800 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-medium text-gray-900 mb-2">Account Security</h3>
+                                    <p class="text-gray-600 leading-relaxed">You are responsible for maintaining the security of your account.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Sections with improved layout -->
+                <div class="terms-section mb-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Left Column -->
+                        <div class="space-y-6">
+                            <div class="section-card p-6 rounded-xl bg-white">
+                                <h2 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                                    <i class="fas fa-check-circle text-green-800 mr-3"></i>
+                                    Service Usage
+                                </h2>
+                                <ul class="bullet-list text-gray-600 space-y-3">
+                                    <li>Services are provided "as is"</li>
+                                    <li>We reserve the right to modify services</li>
+                                    <li>Account registration requirements</li>
+                                    <li>Acceptable use policies</li>
+                                </ul>
+                            </div>
+
+                            <div class="section-card p-6 rounded-xl bg-white">
+                                <h2 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                                    <i class="fas fa-user-check text-green-800 mr-3"></i>
+                                    Your Responsibilities
+                                </h2>
+                                <ul class="bullet-list text-gray-600 space-y-3">
+                                    <li>Providing accurate information</li>
+                                    <li>Maintaining account security</li>
+                                    <li>Compliance with laws and regulations</li>
+                                    <li>Payment obligations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="space-y-6">
+                            <div class="section-card p-6 rounded-xl bg-white">
+                                <h2 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                                    <i class="fas fa-exclamation-circle text-green-800 mr-3"></i>
+                                    Limitations
+                                </h2>
+                                <ul class="bullet-list text-gray-600 space-y-3">
+                                    <li>Liability limitations</li>
+                                    <li>Service availability</li>
+                                    <li>Third-party services</li>
+                                    <li>Dispute resolution</li>
+                                </ul>
+                            </div>
+
+                            <div class="section-card p-6 rounded-xl bg-white">
+                                <h2 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                                    <i class="fas fa-balance-scale text-green-800 mr-3"></i>
+                                    Legal Terms
+                                </h2>
+                                <ul class="bullet-list text-gray-600 space-y-3">
+                                    <li>Governing law</li>
+                                    <li>Intellectual property rights</li>
+                                    <li>Termination conditions</li>
+                                    <li>Amendment procedures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Document Link with improved styling -->
+                <div class="terms-section border-t border-gray-200 pt-8">
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-600 text-sm">Need the complete terms?</p>
+                                <a href="/documents/full-terms-of-service.pdf" class="group text-green-800 hover:text-green-900 font-medium flex items-center mt-1">
+                                    View Full Terms of Service
+                                    <i class="fas fa-external-link-alt ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                </a>
+                            </div>
+                            <a href="/documents/full-terms-of-service.pdf" download 
+                               class="inline-flex items-center px-6 py-3 border border-green-800 text-sm font-medium rounded-lg text-green-800 hover:bg-green-800 hover:text-white transition-all duration-300">
+                                <i class="fas fa-download mr-2"></i>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 h-20">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <p class="text-sm text-gray-600">&copy; 2024 Centuries Mutual. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="privacy-policy.html" class="text-sm text-gray-600 hover:text-green-800">Privacy Policy</a>
+                <a href="contact.html" class="text-sm text-gray-600 hover:text-green-800">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

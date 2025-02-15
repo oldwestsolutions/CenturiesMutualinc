@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Add other shared styles from index.html */
+
+/* Add these new styles */
+.gradient-bg {
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+}
+
+.card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.hover-lift {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+    border-image: linear-gradient(135deg, #064e3b 0%, #065f46 100%) 1;
+}
+
+/* Add these styles for more depth */
+.feature-card {
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 1px solid rgba(6, 78, 59, 0.1);
+    background: linear-gradient(to bottom, white, #fafafa);
+    transform-origin: center;
+    will-change: transform, box-shadow;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(6, 78, 59, 0.05) 0%,
+        rgba(6, 78, 59, 0.01) 100%
+    );
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.feature-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.08),
+        0 12px 20px rgba(0, 0, 0, 0.03);
+    border-color: rgba(6, 78, 59, 0.2);
+}
+
+.feature-card:hover::before {
+    transform: translateY(0);
+}
+
+.feature-card .icon-container {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.feature-card:hover .icon-container {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.feature-card h3 {
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover h3 {
+    color: #064e3b;
+}
+
+.services-gradient {
+    background: linear-gradient(180deg, 
+        rgba(255,255,255,1) 0%,
+        rgba(249,250,251,1) 100%
+    );
+}
+
+/* Enhanced card shadows */
+.card-shadow-hover {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-shadow-hover:hover {
+    box-shadow: 
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05),
+        0 0 0 2px rgba(6, 78, 59, 0.1);
+}
+
+/* Service page enhancements */
+.service-highlight {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background: linear-gradient(
+        135deg,
+        rgba(6, 78, 59, 0.05) 0%,
+        rgba(6, 78, 59, 0.02) 100%
+    );
+}
+
+.service-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #064e3b, rgba(6, 78, 59, 0.2));
+}
+
+.benefit-card {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.benefit-card:hover {
+    transform: translateX(8px);
+    background-color: rgba(6, 78, 59, 0.02);
+} 

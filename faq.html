@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Centuries Mutual</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://placehold.co/80x80" alt="Centuries Mutual Logo" class="h-16 w-16 mr-5"/>
+                    <span class="text-3xl sm:text-4xl font-semibold text-green-900 playfair">Centuries Mutual</span>
+                </a>
+                <div class="flex">
+                    <a href="client-login.html" class="inline-flex items-center px-4 sm:px-6 py-2 border-2 border-green-900 text-sm sm:text-base font-medium rounded text-white bg-green-900 hover:bg-green-800 transition-colors duration-300">
+                        Client Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="bg-gray-50 min-h-screen">
+        <div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 playfair mb-4">
+                    Frequently Asked Questions
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Find answers to common questions about our services and policies
+                </p>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <button class="category-btn bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-green-900 font-medium hover:bg-green-50 transition-colors active">
+                    Insurance
+                </button>
+                <button class="category-btn bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-gray-700 font-medium hover:bg-green-50 transition-colors">
+                    Tax Services
+                </button>
+                <button class="category-btn bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200 text-gray-700 font-medium hover:bg-green-50 transition-colors">
+                    General
+                </button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4">
+                <!-- Insurance FAQs -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <button class="w-full flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-900">What types of insurance do you offer?</h3>
+                        <i class="fas fa-plus text-green-900 faq-icon"></i>
+                    </button>
+                    <div class="faq-answer mt-4">
+                        <p class="text-gray-600">
+                            We offer a comprehensive range of insurance products including:
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-2">
+                            <li>Health Insurance (Individual and Family Plans)</li>
+                            <li>Life Insurance (Term and Whole Life)</li>
+                            <li>Property Insurance</li>
+                            <li>Business Insurance</li>
+                            <li>Disability Insurance</li>
+                            <li>Long-term Care Insurance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <button class="w-full flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-900">How do I file an insurance claim?</h3>
+                        <i class="fas fa-plus text-green-900 faq-icon"></i>
+                    </button>
+                    <div class="faq-answer mt-4">
+                        <p class="text-gray-600">
+                            Filing a claim is simple. You can:
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-2">
+                            <li>Log into your client portal</li>
+                            <li>Call our 24/7 claims hotline</li>
+                            <li>Visit our local office</li>
+                            <li>Contact your assigned insurance agent</li>
+                        </ul>
+                        <p class="mt-4 text-gray-600">
+                            We recommend gathering all relevant documentation before filing your claim to ensure a smooth process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tax Services FAQs -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <button class="w-full flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-900">What tax preparation services do you provide?</h3>
+                        <i class="fas fa-plus text-green-900 faq-icon"></i>
+                    </button>
+                    <div class="faq-answer mt-4">
+                        <p class="text-gray-600">
+                            Our tax services include:
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-2">
+                            <li>Individual Tax Returns</li>
+                            <li>Business Tax Planning</li>
+                            <li>Corporate Tax Preparation</li>
+                            <li>Estate Tax Planning</li>
+                            <li>International Tax Services</li>
+                            <li>Tax Audit Representation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <button class="w-full flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-900">What documents do I need for tax preparation?</h3>
+                        <i class="fas fa-plus text-green-900 faq-icon"></i>
+                    </button>
+                    <div class="faq-answer mt-4">
+                        <p class="text-gray-600">
+                            Essential documents typically include:
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-2">
+                            <li>W-2s and 1099s</li>
+                            <li>Property tax statements</li>
+                            <li>Mortgage interest statements</li>
+                            <li>Charitable donation receipts</li>
+                            <li>Business income and expense records</li>
+                            <li>Previous year's tax returns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- General FAQs -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <button class="w-full flex justify-between items-center focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-900">How do I schedule an appointment?</h3>
+                        <i class="fas fa-plus text-green-900 faq-icon"></i>
+                    </button>
+                    <div class="faq-answer mt-4">
+                        <p class="text-gray-600">
+                            You can schedule an appointment through:
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-2">
+                            <li>Our online scheduling system</li>
+                            <li>Calling our office directly</li>
+                            <li>Emailing our support team</li>
+                            <li>Visiting our local office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mt-16 text-center">
+                <h2 class="text-2xl font-bold text-gray-900 playfair mb-4">
+                    Still Have Questions?
+                </h2>
+                <p class="text-gray-600 mb-8">
+                    Our team is here to help. Contact us for personalized assistance.
+                </p>
+                <a href="contact.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-900 hover:bg-green-800 transition-colors duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-sm text-gray-600">&copy; 2024 Centuries Mutual. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-item button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.closest('.faq-item');
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Category filtering
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.classList.remove('bg-green-50');
+                    btn.classList.add('text-gray-700');
+                });
+
+                // Add active class to clicked button
+                button.classList.add('active');
+                button.classList.add('bg-green-50');
+                button.classList.remove('text-gray-700');
+                button.classList.add('text-green-900');
+            });
+        });
+    </script>
+</body>
+</html> 
