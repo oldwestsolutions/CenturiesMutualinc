@@ -8,6 +8,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
         .feature-card {
             transition: all 0.5s ease-in-out;
         }
@@ -15,6 +37,20 @@
         .feature-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .hero-content {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .stats-section {
+            animation: slideInRight 0.8s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+
+        .content-section {
+            animation: fadeInUp 0.8s ease-out 0.5s forwards;
+            opacity: 0;
         }
     </style>
 </head>
@@ -44,7 +80,7 @@
     <!-- Hero Section -->
     <div class="bg-gradient-to-r from-green-900 to-green-800 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="max-w-3xl">
+            <div class="max-w-3xl hero-content">
                 <h1 class="text-4xl font-bold playfair mb-6">Life Insurance Protection</h1>
                 <p class="text-xl text-green-100">Secure your family's future with our comprehensive life insurance solutions.</p>
             </div>
@@ -52,7 +88,7 @@
     </div>
 
     <!-- Stats Section -->
-    <div class="relative -mt-16 z-10 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="relative -mt-16 z-10 max-w-7xl mx-auto px-4 sm:px-6 stats-section">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="feature-card bg-white rounded-lg shadow-lg p-6">
                 <div class="flex items-center">
@@ -99,7 +135,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 content-section">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <!-- Left Column - Features -->
             <div class="lg:col-span-2 space-y-12">
